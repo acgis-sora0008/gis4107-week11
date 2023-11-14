@@ -1,16 +1,8 @@
 import math
 class Circle:
-    def __init__(self):
-        self.__radius = 0
+    def __init__(self, radius):
+        self.__radius = radius
         self.__area = 0
-
-    @property 
-    def radius(self):
-        return self.radius 
-    
-    @radius.setter
-    def radius(self, radius):
-        self.__radius  = radius
     
     @property
     def area(self):
@@ -24,15 +16,7 @@ class Message(Circle):
         return 'Circle area with a radius of 2 is 12.566'
 
 class Square:
-    def __init__(self):
-        self.__side = 0
-    
-    @property
-    def side(self):
-        return self.side
-    
-    @side.setter
-    def side(self, side):
+    def __init__(self, side):
         self.__side = side
     
     @property
@@ -47,24 +31,8 @@ class Message(Square):
         return 'Square area with a side of 2 is 4'
 
 class Rectangle:
-    def __init__(self):
-        self.__width = 0
-        self.__height = 0
-    
-    @property
-    def width(self):
-        return self.width
-    
-    @width.setter
-    def width(self, width):
+    def __init__(self, width, height):
         self.__width = width
-    
-    @property
-    def height(self):
-        return self.height
-    
-    @height.setter
-    def height(self, height):
         self.__height = height
     
     @property
