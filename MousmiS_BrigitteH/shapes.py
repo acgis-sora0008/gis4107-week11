@@ -17,10 +17,10 @@ class Circle:
         self.__area = math.pi*(self.__radius)**2
         return self.__area
 
-class Message(Circle):
+class Message1(Circle):
     def __init__(self, message):
         self.message = message
-    def output(self):
+    def output_circle(self):
         return 'Circle area with a radius of 2 is 12.566'
 
 class Square:
@@ -40,10 +40,10 @@ class Square:
         self.__area = self.__side**2
         return self.__area
 
-class Message(Square):
+class Message2(Square):
     def __init__(self, message):
         self.message = message
-    def output(self):
+    def output_square(self):
         return 'Square area with a side of 2 is 4'
 
 class Rectangle:
@@ -72,9 +72,9 @@ class Rectangle:
         self.__area = self.__width*self.__height
         return self.__area
 
-class Message(Rectangle):
+class Message3(Rectangle):
     def __init__(self, message):
         self.message = message
-    def output(self):
+    def output_rectangle(self):
         return 'Rectangle area with a width of 2 and height of 4 is 8'
 
