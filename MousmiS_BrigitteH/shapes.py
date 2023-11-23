@@ -77,4 +77,3 @@ class Message3(Rectangle):
         self.message = message
     def output_rectangle(self):
         return 'Rectangle area with a width of 2 and height of 4 is 8'
-
